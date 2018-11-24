@@ -10,7 +10,8 @@
   "author": "Anthony Medina",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"
