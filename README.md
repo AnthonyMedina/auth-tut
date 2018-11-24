@@ -11,10 +11,10 @@ curl offers a busload of useful tricks like proxy support, user authentication, 
 `cURL -X GET http://localhost:9090/ -v`
 
 ```
+client $ curl -X GET http://localhost:9090 -v
+Note: Unnecessary use of -X or --request, GET is already inferred.
 * Rebuilt URL to: GET/
-* Could not resolve host: GET
 * Closing connection 0
-curl: (6) Could not resolve host: GET
 * Rebuilt URL to: http://localhost:9090/
 *   Trying ::1...
 * TCP_NODELAY set
