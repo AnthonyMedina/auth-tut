@@ -40,3 +40,16 @@ Note: Unnecessary use of -X or --request, GET is already inferred.
 > 5. '>' indicates data cURL has sent to the server.
 > 6. '<' indicates data cURL has received from server.
 > 7. Lastly, you see the response text that the server sent
+
+## uuid / express-session
+
+```
+curl -X GET http://localhost:3000 -v
+...
+< set-cookie: connect.sid=s%3A1675fa19-19aa-43c2-9d50-b57bb4b93ff8.yIwufz%2FFesLQagAJvR04hJ0imu5%2BybTPZ%2FJknl20pC4; Path=/; HttpOnly
+...
+```
+
+> Browsers will automatically save/send the session id and send it in each request to the server; however, cURL doesn’t automatically save our session ID and send it in the request headers.
+
+`client $ curl -X GET http://localhost:9090 -c cookie-file.txt`
