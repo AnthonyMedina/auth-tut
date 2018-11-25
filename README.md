@@ -44,7 +44,7 @@ Note: Unnecessary use of -X or --request, GET is already inferred.
 ## uuid / express-session
 
 ```
-curl -X GET http://localhost:3000 -v
+curl -X GET http://localhost:9090 -v
 ...
 < set-cookie: connect.sid=s%3A1675fa19-19aa-43c2-9d50-b57bb4b93ff8.yIwufz%2FFesLQagAJvR04hJ0imu5%2BybTPZ%2FJknl20pC4; Path=/; HttpOnly
 ...
