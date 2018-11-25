@@ -1,6 +1,7 @@
 const app = require('express')();
 const uuid = require('uuid/v4');
 const session = require('express-session');
+const FileStore = require('session-file-store')(session);
 
 app.use(
   session({
@@ -9,6 +10,7 @@ app.use(
       console.log(req.sessionID);
       return uuid();
     },
+    store: new FileStore(),
     secret: 'ants',
     resave: false,
     saveUninitialized: true
