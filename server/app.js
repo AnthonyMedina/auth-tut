@@ -2,6 +2,10 @@ const app = require('express')();
 const uuid = require('uuid/v4');
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(
   session({
